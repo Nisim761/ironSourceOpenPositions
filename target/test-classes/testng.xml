@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite verbose="2" name="IronSource Tests">
+    <test name="IronSource">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="location" value="tel-aviv"/>
+        <parameter name="domain" value="R&amp;D"/>
+        <classes>
+            <class name="IronSourceWebsiteTests">
+                <methods>
+                    <include name="validateNumberOfOpenPositions" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
